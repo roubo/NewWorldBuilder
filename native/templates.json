@@ -1,0 +1,19 @@
+{
+  "Android": {
+    "Java": {
+      "0" : {
+        "MVC" : {
+          "branch": "JAVA_EMPTYACTIVITY"
+        },
+        "MVP": {
+          "branch": "JAVA_EMPTYACTIVITY"
+        },
+        "MVVC": {
+          "branch": "JAVA_EMPTYACTIVITY"
+        }
+      }
+    },
+    "Kotlin": {
+    }
+  }
+}
