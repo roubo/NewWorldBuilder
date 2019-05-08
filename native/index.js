@@ -83,9 +83,9 @@ const entry = (name, describe, author) => {
 
     // 开始下载模板
     if(branch !== '') {
-      const spinner = ora('下载模板 ...');
+      const spinner = ora('下载模板 ' + branch + ' ...');
       spinner.start();
-      download('flipxfx/download-git-repo-fixture#' + branch, name, {clone: true}, (err) => {
+      download('direct:https://github.com/roubo/NewWorldAndroidTemplates.git#' + branch, `${name}/${name}`, {clone: true}, (err) => {
         if(err) {
           spinner.fail();
           console.log(symbols.error, chalk.red(err));
